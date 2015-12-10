@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--meta name="apple-mobile-web-app-capable" content="yes"-->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" th:href="@{../static/Questions.css}">
+    <title>Homepage</title>
+</head>
+<body>
+<h1> Quiz</h1>
+<div class = "jumbotron"  >
+    <div class = "transparent">
+     <h6> Please enter more information about your preferences </h6> </div>
+    <div class = "transparent">    
+     <h5> What Console do you use? </h5> </div>
+
+    <div class="dropdown ">
+        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Select your Console <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nintendo DS</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nintendo Wii U</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nintendo 3DS</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nintendo Wii</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PC Gaming</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Playstation 4</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Playstation 3</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PS Vita</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">xbox One</a>
+            </li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">xbox 360 </a>
+            </li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Any</a>
+            </li>
+        </ul>
+    </div>
+    <div class = "transparent">
+     <h5> Category </h5> </div>
+
+    <button type="button" class="btn btn-info btn-md" id="myBtn">Select</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">Categories</h4>
+
+                </div>
+                <div class="modal-body">
+                    <p>Please select your filters</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">3D</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Action</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Balance Board</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Educational</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Fighting</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Kinect</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Motion Plus</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Move</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Music and Party</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Puzzles and Cards</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Role Playing</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Shooter</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Simulation</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Sports</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>
+                                <input type="checkbox" value="">Strategy</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <script>
+            $(document).ready(function() {
+                $(".dropdown-toggle").dropdown("toggle");
+                $("#myBtn").click(function() {
+                    $("#myModal").modal({
+                        backdrop: true
+                    });
+                });
+            });
+        </script>
+</body>
+</html>

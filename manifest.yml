@@ -1,0 +1,7 @@
+applications:
+ - name: pas-mobile-web
+   memory: 512M
+   instances: 1
+   path: target/GameStop-Table6-0.0.1-SNAPSHOT.jar
+   host: GameStop-Table6
+   domain: mybluemix.net

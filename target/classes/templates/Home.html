@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="GameStopTable6"/>
+	<meta name="author" content="Tushar Khonde"/>
+	<title>Emoti Selection</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+	<div class = "row">
+		
+		<div class="col-md-12 text-center"> 
+			
+				<h1><b>EmotiSearch</b></h1>
+				<h5>Powered with Emotions</h5>
+		
+	
+	<!-- connect first button to the camera -->
+		</div>
+	
+		<div class = "jumbotron text-center">
+			<div class = "transparent">
+			<p>How Do You Feel?</p></div>
+			<form class="form-group" th:action="@{/getImage}" method="get">
+				<input type="submit" value="Submit" />  <br/> <br/>
+			</form>
+			<form class="form-group" th:action="@{/getQuestions}" method="get">
+				<input type="submit" value="No Thanks" />  <br/> <br/>
+				</form>
+		</div>
+
+	</div>
+
+	<div class = "logo">
+		<div class = "col-md-12 text-center">
+			<p><u>Powered By</u></p>
+
+		 	<img src="https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/ibmbluemix.jpg" width="75" height="23"/>
+			<img src="
+https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/gameStop.jpg" width="60" height="60"/>
+
+		</div>
+		 	
+	 </div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Congratulations! Your new project is here:
+
+Project URL: https://hub.jazz.net/project/pasapples/SpringBootMobileWeb
+
+Git Repository URL: https://github.com/papicella/SpringBootMobileWebDemo.git

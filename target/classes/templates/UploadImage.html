@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <!--meta name="apple-mobile-web-app-capable" content="yes"-->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="GameStopTable6"/>
+    <meta name="author" content="Tushar Khonde"/>
+    <title>Games List</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <!--<link rel="stylesheet" th:href="@{../static/Homepage.css}"/>-->
+
+</head>
+<body>
+
+
+<div class = "jumbotron text-center">
+
+
+    <p>Please select a sample image to submit.</p>
+    <p> or Upload / Take your own!</p>
+
+    <div class="row">
+        <div class="col-sm-3">
+              <div class="panel panel-default about-box">
+                <div class="panel-heading"><h3>Happiness</h3></div>
+                <div class="panel-body">
+                <form class="form-group" th:object="${image}" th:action="@{/getProductsFromImageClick}" method="post">
+                  <img class="img-responsive" src="
+https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/e1.jpg" width="300" height="300"/>
+                  <p><h4>Kevin</h4></p>
+                    <input type="hidden" name="image" value="https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/e1.jpg"/>
+                    <p><input type="submit" value="Submit" /> </p>
+                </form>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+              <div class="panel panel-default about-box">
+                <div class="panel-heading"><h3>Sadness</h3></div>
+                <div class="panel-body">
+                    <form class="form-group" th:object="${image}" th:action="@{/getProductsFromImageClick}" method="post">
+                 <img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/e4.jpg" width="300" height="300"/>
+                  <p><h4>Erin</h4></p>
+                        <input type="hidden" name="image" value="https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/e4.jpg" />
+
+                        <p><input type="submit" value="Submit" /> </p>
+                    </form>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+              <div class="panel panel-default about-box">
+                <div class="panel-heading"><h3>Neutral</h3></div>
+                <div class="panel-body">
+                    <form class="form-group" th:object="${image}" th:action="@{/getProductsFromImageClick}" method="post">
+                    <img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/e3.jpg" width="300" height="300"/>
+                  <p><h4>Tushar</h4></p>
+                        <input type="hidden" name="image" value="https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/e3.jpg"/>
+                        <p><input type="submit" value="Submit" /> </p>
+                    </form>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+              <div class="panel panel-default about-box">
+                <div class="panel-heading"><h3>Disgust</h3></div>
+                <div class="panel-body">
+                    <form class="form-group" th:object="${image}"  th:action="@{/getProductsFromImageClick}" method="post">
+                        <input type="hidden" name="image" value="https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/e2.jpg"/>
+                  <img class="img-responsive" src="
+https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-414939076196/e2.jpg" width="300" height="300"/>
+                  <p><h4>Mason</h4></p>
+                        <p><input type="submit" value="Submit" /> </p>
+                    </form>
+                </div>
+              </div>
+        </div>
+
+    </div>
+
+</div>
+ 
+</body>
+</html>

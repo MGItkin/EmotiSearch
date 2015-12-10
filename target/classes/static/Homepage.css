@@ -1,0 +1,77 @@
+a{
+	font-family: "arial";
+	color:black;
+	display: block;
+	padding:20px 10px;
+	 
+}
+
+.jumbotron {
+    position: relative;
+    background: #000 url("milleniumfalcon.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container{
+	padding-right:200pt ;
+	padding-left:200pt ;
+}
+
+body{
+
+	border-top: "white" 10pt;
+	border-bottom: "white"10pt;
+	border-left-width: 50pt;
+	border-right-width:50pt;
+	background-color: white;
+	padding:30px;
+
+
+}
+#results{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+	background: radial-gradient(white, red);
+}
+
+div.transparent{
+	margin:10px;
+	background-color:#ffffff;
+	opacity:0.5;
+}
+
+img.profile{
+padding:10pt;
+}
+
+h1,h5{
+
+	color:gray;
+	font-family: "arial";
+}
+
+h3{
+	color:white;
+
+}
+h1.this{
+	color: red;
+}
+.page-header{
+	background-color: gray;
+}
+
+p{
+	padding-left:20pt ;
+	padding-right:20pt ;
+}
+
+#first{
+	
+	text-align: center;
+
+	padding: 10pt;
+
+}
