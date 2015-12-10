@@ -8,4 +8,4 @@ Emotisearch takes the user's picture and a few questions (ie. "What consoles do 
 
 ####Implementation:
 
-This application is written in SpringJS, Bootstrap, HTML5, & CSS3. Emotisearch uses GameStop's product API to query against for filtered game searches and customer APIs to retrieve the customer's personal preferences. Additionally, Microsoft's Project Oxford Computer Vision APIs are used to perform the emotional and physical characterstics analysis on the user generated images.
+This application is written in SpringJS, Bootstrap, HTML5, & CSS3. Emotisearch  querys against GameStop's product and customer APIs to perform filtered game searches and to retrieve the customer's personal preferences. Additionally, Microsoft's Project Oxford Computer Vision APIs are used to perform the emotional and physical characterstics analysis on the user generated images.
