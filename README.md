@@ -1,6 +1,6 @@
-#EMOTISEARCH!
+#EmotiSearch!
 
-###About:
+####About:
 Emotisearch began as a submission for GameStop & IBM's Hackathon at San Jose State University (November 2015).
 
 EmotiSearch was designed to be a unique way for customers to use thir own image as a way to search for new games, explore different genres, or simply entertain themselves for a few minutes.
